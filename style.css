@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+main {
+    min-height: 2000px;
+}
+
+body.retro {
+    font-family: serif;
+    color: #000000;
+    background: url("hats.png") #ffffff fixed repeat top left / 15%;
+}
+
+body.retro main {
+    background-color: #ffffffee;
+    
+}
