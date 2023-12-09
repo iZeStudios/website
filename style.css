@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    background-color: #eeeeee;
+    background: lavender;
 }
 
 body.retro {
@@ -49,7 +49,7 @@ body.retro {
     animation: bgscroll 30s linear infinite;
 }
 
-body.retro main {
+main {
     background-color: #ffffffee;
 }
 
@@ -57,14 +57,14 @@ body.retro .dx {
     animation: rainbow 2s linear infinite;
 }
 
-body.retro .x {
+.x {
     color: orange;
 }
 
-body.retro h3 {
+h3 {
     color: #00ffff;
 }
 
-body.retro h4 {
+h4 {
     color: #00ff00;
 }
