@@ -30,9 +30,10 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="retro">
-    <header class="sticky-top text-center p-2">
-        <button type="button" id="retro">Reduce Eyestrain</button>
-        <button type="button" onclick="location.href = '/'">Main Page</button>
+    <header class="sticky-top text-center container p-2">
+        <button type="button" id="retro">reduce eyestrain</button>
+        <button type="button" id="dark">dark mode</button>
+        <button type="button" onclick="location.href='/'">main page</button>
     </header>
     <main class="container p-md-4">
         <div class="container text-center py-4"><img src="logo.png" class="w-50" alt="sm64coopdx Logo"></div>
@@ -256,7 +257,10 @@
         <p>Added Day Night Cycle DX (Agent X)</p>
         <p>Added Gun Mod DX (Agent X)</p>
     </main>
-    <footer class="text-center p-2">&copy; Coop <span class="dx">Deluxe</span> Team 2023</footer>
+    <footer class="text-center p-2">
+        <p>&copy; Coop <span class="dx">Deluxe</span> Team 2023</p>
+        <button type="button" onclick="localStorage.clear()">reset preferences</button>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="retro.js"></script>
 </body>

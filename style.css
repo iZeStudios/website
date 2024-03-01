@@ -37,7 +37,7 @@
 }
 
 body {
-    background: #e70023;
+    background: #888888;
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -47,13 +47,31 @@ body.retro {
     animation: bgscroll 30s linear infinite;
 }
 
+body.dark {
+    color: #ffffff;
+    background-color: #000000;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-family: 'Kanit', sans-serif;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+}
+header button {
+    flex-grow: 1;
+    margin: 0 1em;
+}
+
 main {
     background-color: #ffffffee;
+}
+
+body.dark main {
+    background-color: #000000ee;
 }
 
 body.retro .dx {
