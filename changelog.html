@@ -31,13 +31,77 @@
 </head>
 <body class="retro">
     <header class="sticky-top text-center container p-2">
-        <button type="button" id="retro">reduce eyestrain</button>
-        <button type="button" id="dark">dark mode</button>
-        <button type="button" onclick="location.href='/'">main page</button>
+        <button type="button" id="retro">Reduce Eyestrain</button>
+        <button type="button" id="dark">Dark Mode</button>
+        <button type="button" onclick="location.href='/'">Main Page</button>
     </header>
     <main class="container p-md-4">
         <div class="container text-center py-4"><img src="logo.png" class="w-50" alt="sm64coopdx Logo"></div>
 
+        <h3>sm64coopdx v0.2 - 3.14 Update</h3>
+        <p>Pi!</p>
+        <p>Released on March 14th, 2024 at 7:00 PM EST</p>
+        <h3>Changelog (81 commits):</h3>
+        <h4>Changes:</h4>
+        <p>Added an update checker to notify people of new updates (Agent X)</p>
+        <p>Made the version on the main menu always the sm64coopdx version (Agent X)</p>
+        <p>Added over 40 missing gfx symbols to the DynOS parser (Agent X)</p>
+        <p>Increased object pool capacity from 960 to 1200 (Agent X)</p>
+        <p>Made Mario & Luigi cap emblems use the shirt color (Agent X)</p>
+        <p>Moved changelog to the info panel (Agent X)</p>
+        <p>Added a properly implemented vanilla singleplayer pause (Agent X)</p>
+        <p>Restored the vanilla pause menu red coin display if there are 8 (Agent X)</p>
+        <p>Restored vanilla camera zoom out with singleplayer (this is toggleable through gLevelValues.zoomOutCameraOnPause) (Agent X)</p>
+        <p>Forced DynOS and player panels to be uncentered (Agent X)</p>
+        <p>Made the light & dark theme panel backgrounds slightly less opaque (Agent X)</p>
+        <p>Disabled any vertex rounding when generating DynOS actors (Agent X)</p>
+        <p>Added option to only apply DynOS playermodels onto the local player (Agent X)</p>
+        <p>Made dirt particle vertex colorable (Agent X)</p>
+        <p>Allowed players to bounce on mid air players' heads (Agent X)</p>
+        <p>Made recovery hearts only heal the last person who touched it (Agent X)</p>
+        <p>Partially rewrote launch parameter code (Agent X)</p>
+        <p>Added --hide-loading-screen param (Agent X)</p>
+        <p>Increased vertical tilt range and disabled tilt centering while sliding for free cam (xLuigiGamerx)</p>
+        <h4>Fixes:</h4>
+        <p>Fixed console not being openable from the main menu (Agent X)</p>
+        <p>Fixed interpolated rectangles using the wrong resolution (Cooliokid 956)</p>
+        <p>Fixed SDL2 linux compositor with X11 (Dominicentek)</p>
+        <p>Fixed memory leak with custom animations that caused strange glitches (Agent X)</p>
+        <p>Fixed sm64coopdx exclusive features still working when hosting sm64ex-coop servers (Agent X)</p>
+        <p>Fixed a bizzare bug with perfect frame pausing causing you to go to seemingly random warp nodes (Isaac)</p>
+        <p>Fixed 1 player lobbies saying "Waiting for players..." (Agent X)</p>
+        <p>Fixed the --help launch parameter not outputting anything (Agent X)</p>
+        <p>Fixed --server jank by basically rewriting how it works (Agent X)</p>
+        <p>Fixed the mouse disappearing forever on the window after closing the chat (Agent X)</p>
+        <p>Fixed the bugs with transitions such as delays, not being able to pause, flashing, playing repeatedly (Agent X)</p>
+        <p>Fixed inconsistent capitalization on the loading screen (Agent X)</p>
+        <p>Fixed the cake screen cutting off and returning to the entry level too early (Agent X)</p>
+        <p>Fixed hoot having invisible wings (Agent X)</p>
+        <p>Fixed ludicrous char width on '¿' (Agent X)</p>
+        <h4>Lua API Changes:</h4>
+        <p>Added the ability to have global star IDs (Agent X)</p>
+        <p>Added the ability to not show star collection dialogs (Agent X)</p>
+        <p>Allowed FONT_HUD to have texture filtering (Agent X)</p>
+        <p>Added the ability to change window title (Agent X)</p>
+        <p>Added the ability to get the global timer (Agent X)</p>
+        <p>Added get and set functions for the HUD star flash (Agent X)</p>
+        <p>Added HUD_DISPLAY_CAMERA_STATUS for hud_get_value() (Agent X)</p>
+        <p>Exposed level_control_timer_running() to check if the timer is running (Agent X)</p>
+        <p>Raised max BASS audio files from 128 to 256 (Agent X)</p>
+        <p>Added '-- pausable' field so mods can mark themselves as being able to function when the game is paused in singleplayer (Agent X)</p>
+        <p>Added ENVFX_MODE_NO_OVERRIDE constant to clarify set_override_envfx() usage (Agent X)</p>
+        <p>Added OBJ_LIST_EXT for Lua mods to use just in case (Agent X)</p>
+        <br>
+        <p>Total constants: 3981</p>
+        <p>Total functions: 1573</p>
+        <p>Total structs: 82</p>
+        <br>
+        <h4>Mod Changes:</h4>
+        <p>Made Hide & Seek disable the pause menu camera zoom out (Agent X)</p>
+        <p>Updated Character Select to v1.7 (Agent X)</p>
+        <p>Updated Toadette's model in [CS] Extra Characters (AngelicMiracles)</p>
+        <p>Updated Arena and added Blimp City, new music for levels and fixed KOTH, Rainbow Road collision and level lighting direction (AngelicMiracles)</p>
+        <br>
         <h3>sm64coopdx v0.1.4 - Valentines Update</h3>
         <p>Released on February 19th, 2024 at 10:00 AM EST</p>
         <h3>Changelog (26 commits):</h3>
