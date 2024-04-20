@@ -1,89 +1,531 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@keyframes bgscroll {
-    0% {
-        background-position: top left;
-    }
-    50% {
-        background-position: bottom right;
-    }
-    100% {
-        background-position: top left;
-    }
-}
-
 @keyframes rainbow {
-    0% {
-        color: #ff0000;
-    }
-    16% {
-        color: #dcdc00;
-    }
-    33% {
-        color: #00ff00;
-    }
-    50% {
-        color: #00ffff;
-    }
-    67% {
-        color: #0000ff;
-    }
-    83% {
-        color: #ff00ff;
-    }
-    100% {
-        color: #ff0000;
-    }
+	0% {
+		color: #ff0000;
+	}
+
+	16% {
+		color: #dcdc00;
+	}
+
+	33% {
+		color: #00ff00;
+	}
+
+	50% {
+		color: #00ffff;
+	}
+
+	67% {
+		color: #0000ff;
+	}
+
+	83% {
+		color: #ff00ff;
+	}
+
+	100% {
+		color: #ff0000;
+	}
 }
 
 body {
-    background: #888888;
-    font-family: 'Noto Sans', sans-serif;
-    color: #000000;
-    background: url("hats.png") #ffffff fixed repeat top left / 15%;
-    animation: bgscroll 30s linear infinite;
-    text-align: center;
+	color: #ffffff;
+	background-color: #000000;
+	font-family: 'Noto Sans', sans-serif;
 }
 
-body.dark {
-    color: #ffffff;
-    background-color: #000000;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    font-family: 'Kanit', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	font-family: 'Kanit', sans-serif;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
+
 header button {
-    flex-grow: 1;
-    margin: 0 1em;
+	flex-grow: 1;
+	margin: 0 1em;
 }
 
 main {
-    background-color: #ffffffce;
+	background-color: #000000ee;
 }
 
-body.dark main {
-    background-color: #000000ce;
+body .dx {
+	animation: rainbow 2s linear infinite;
 }
 
-body.retro .dx {
-    animation: rainbow 2s linear infinite;
+h3 {
+	color: #ff4040;
 }
 
-.x {
-    color: #ec7731;
+h4 {
+	color: #40ffff;
 }
 
-h1 {
-    color: #ff0000;
+a {
+	color: #8080ff;
 }
 
-h2 {
-    color: #0000ff;
+.fqa-question {
+	color: #ffa050;
+}
+
+.fqa-answer {
+	color: #80ff80;
+}
+
+@font-face {
+	font-family: 'SuperMario256CustomFont';
+	src: url(SuperMario256.ttf) format('truetype');
+}
+
+body {
+	background: linear-gradient(to bottom,
+			hsl(360, 100%, 60%),
+			hsl(330, 100%, 60%),
+			hsl(300, 100%, 60%),
+			hsl(270, 100%, 60%),
+			hsl(240, 100%, 60%),
+			hsl(210, 100%, 60%),
+			hsl(180, 100%, 60%),
+			hsl(150, 100%, 60%),
+			hsl(120, 100%, 60%),
+			hsl(90, 100%, 60%),
+			hsl(60, 100%, 60%),
+			hsl(30, 100%, 60%),
+			hsl(0, 100%, 60%)) !important;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+}
+
+body,
+body * {
+	font-family: "Geologica", normal !important;
+	font-weight: normal !important;
+	font-size: 32px !important;
+}
+
+h3,
+h3 *,
+h4,
+h4 * {
+	font-family: "Geologica", sans-serif !important;
+	font-weight: 900 !important;
+	font-size: 48px !important;
+}
+
+body main {
+	border-radius: 32px;
+	border-width: 2px;
+	border-style: solid;
+	background-color: #000000a0 !important;
+}
+
+.wrapper {
+	content: "";
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(336deg,
+			rgba(0, 0, 255, 0.3),
+			rgba(0, 0, 255, 0)),
+		linear-gradient(217deg, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0)),
+		linear-gradient(127deg, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0)),
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)) !important;
+}
+
+html {
+	margin: 0;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+body * {
+	font-family: "Geologica", sans-serif !important;
+	font-weight: normal;
+	text-shadow: 4px 4px 2px #000000;
+}
+
+button:hover {
+	background: linear-gradient(250deg,
+			#004236c0,
+			#003c42c0,
+			#001142c0,
+			#000542c0,
+			#2a0042c0,
+			#42003ac0,
+			#420020c0,
+			#420000c0,
+			#421700c0);
+	border-style: inset;
+	border-size: 5px;
+	border-color: rgba(255, 255, 255, 0.75);
+}
+
+button {
+	font-family: "SuperMario256CustomFont", sans-serif !important;
+	font-weight: normal;
+	font-size: 32px !important;
+	letter-spacing: 4px !important;
+	padding: 0.6rem !important;
+	background-color: shadowBox;
+	color: white;
+	padding: 1rem;
+	margin: 0 10px !important;
+	overflow: hidden;
+	border-radius: 16px;
+	box-shadow: -10px -10px 20px rgba(32, 32, 32, 0.5);
+	text-shadow: 4px 4px 2px #000000;
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	background: linear-gradient(250deg,
+			#00423680,
+			#003c4280,
+			#00114280,
+			#00054280,
+			#2a004280,
+			#42003a80,
+			#42002080,
+			#42000080,
+			#42170080);
+	background-size: 2000% 2000%;
+	border-style: outset;
+	border-size: 5px;
+	border-color: rgba(32, 32, 32, 0.5);
+	-webkit-animation: AnimationName 60s ease infinite;
+	-moz-animation: AnimationName 60s ease infinite;
+	-o-animation: AnimationName 60s ease infinite;
+	animation: AnimationName 60s ease infinite;
+}
+
+.p-md-4 {
+	box-sizing: content-box;
+	background-color: shadowBox;
+	color: white;
+	overflow: hidden;
+	background: #ffffff80;
+	box-shadow: -10px -10px 20px rgba(32, 32, 32, 0.5);
+	text-shadow: 4px 4px 2px #000000;
+	backdrop-filter: blur(7px);
+	-webkit-backdrop-filter: blur(7px);
+	background-size: 2000% 2000%;
+	-webkit-animation: AnimationName 60s ease infinite;
+	-moz-animation: AnimationName 60s ease infinite;
+	-o-animation: AnimationName 60s ease infinite;
+	animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+	0% {
+		background-position: 0% 27%;
+	}
+
+	50% {
+		background-position: 100% 74%;
+	}
+
+	100% {
+		background-position: 0% 27%;
+	}
+}
+
+@-moz-keyframes AnimationName {
+	0% {
+		background-position: 0% 27%;
+	}
+
+	50% {
+		background-position: 100% 74%;
+	}
+
+	100% {
+		background-position: 0% 27%;
+	}
+}
+
+@-o-keyframes AnimationName {
+	0% {
+		background-position: 0% 27%;
+	}
+
+	50% {
+		background-position: 100% 74%;
+	}
+
+	100% {
+		background-position: 0% 27%;
+	}
+}
+
+@keyframes AnimationName {
+	0% {
+		background-position: 0% 27%;
+	}
+
+	50% {
+		background-position: 100% 74%;
+	}
+
+	100% {
+		background-position: 0% 27%;
+	}
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150vh;
+	height: 150vh;
+	height: 150vh;
+	height: 150vh;
+	margin-top: -50vh;
+	overflow: hidden;
+}
+
+.svgwrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	z-index: 1;
+}
+
+.svgwrapper li {
+	position: absolute;
+	list-style: none;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.15);
+	bottom: -50vh;
+	-webkit-animation: svganimation 25s infinite;
+	-moz-animation: svganimation 25s infinite;
+	-o-animation: svganimation 25s infinite;
+	animation: svganimation 25s infinite;
+	transition-timing-function: linear;
+}
+
+@-webkit-keyframes svganimation {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-200vh) rotate(600deg);
+	}
+}
+
+@-moz-keyframes svganimation {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-200vh) rotate(600deg);
+	}
+}
+
+@-o-keyframes svganimation {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-200vh) rotate(600deg);
+	}
+}
+
+@keyframes svganimation {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-200vh) rotate(600deg);
+	}
+}
+
+.glowing-image img {
+	animation: zoom-animation 7s infinite ease-in-out, glow-animation 10s infinite linear;
+}
+
+@keyframes zoom-animation {
+	0% {
+		transform: scale(1, 1);
+	}
+
+	50% {
+		transform: scale(1.05, 1.05);
+	}
+
+	100% {
+		transform: scale(1, 1);
+	}
+}
+
+@keyframes glow-animation {
+	0% {
+		filter: drop-shadow(0 0 30px hsl(0, 100%, 60%));
+	}
+
+	8.33% {
+		filter: drop-shadow(0 0 30px hsl(30, 100%, 60%));
+	}
+
+	16.66% {
+		filter: drop-shadow(0 0 30px hsl(60, 100%, 60%));
+	}
+
+	25% {
+		filter: drop-shadow(0 0 30px hsl(90, 100%, 60%));
+	}
+
+	33.33% {
+		filter: drop-shadow(0 0 30px hsl(120, 100%, 60%));
+	}
+
+	41.66% {
+		filter: drop-shadow(0 0 30px hsl(150, 100%, 60%));
+	}
+
+	50% {
+		filter: drop-shadow(0 0 30px hsl(180, 100%, 60%));
+	}
+
+	58.33% {
+		filter: drop-shadow(0 0 30px hsl(210, 100%, 60%));
+	}
+
+	66.66% {
+		filter: drop-shadow(0 0 30px hsl(240, 100%, 60%));
+	}
+
+	75% {
+		filter: drop-shadow(0 0 30px hsl(270, 100%, 60%));
+	}
+
+	83.33% {
+		filter: drop-shadow(0 0 30px hsl(300, 100%, 60%));
+	}
+
+	91.66% {
+		filter: drop-shadow(0 0 30px hsl(330, 100%, 60%));
+	}
+
+	100% {
+		filter: drop-shadow(0 0 30px hsl(360, 100%, 60%));
+	}
+}
+
+#starshine {
+	position: relative;
+	box-sizing: content-box;
+	top: -10pcx;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	overflow: visible;
+	margin-bottom: 64px;
+	padding-top: 32px;
+}
+
+#shineimg {
+	z-index: 5;
+	position: inherit;
+	width: -webkit-fill-available;
+	padding-left: 4vw;
+	padding-right: 4vw;
+}
+
+.shine {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-image: url(sparklingstar.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	overflow: shown;
+	z-index: 4;
+	color: tansparent;
+	-moz-opacity: 0.0;
+	opacity: 0.0;
+	animation: glitter 6s linear 0s infinite normal;
+	-webkit-animation: glitter 6s linear 0s infinite normal;
+	-moz-animation: glitter 8s linear 0s infinite normal;
+	-ms-animation: glitter 8s linear 0s infinite normal;
+	-o-animation: glitter 8s linear 0s infinite normal;
+}
+
+.shine.small {
+	width: 50px;
+	height: 50px;
+}
+
+.shine.medium {
+	width: 75px;
+	height: 75px;
+}
+
+.shine.large {
+	width: 100px;
+	height: 100px;
+}
+
+@-webkit-keyframes glitter {
+	0% {
+		-webkit-transform: scale(0.3) rotate(0deg);
+		opacity: 0;
+	}
+
+	25% {
+		-webkit-transform: scale(1) rotate(360deg);
+		opacity: 1;
+	}
+
+	50% {
+		-webkit-transform: scale(0.3) rotate(720deg);
+		opacity: 0;
+	}
+
+	100% {
+		-webkit-transform: scale(0.3) rotate(0deg);
+		opacity: 0;
+	}
+}
+
+.modimg {
+	display: inline-block;
+	background-repeat: no-repeat;
+	animation: none !important;
+	font-size: 50px;
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
 }
