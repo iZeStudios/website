@@ -99,8 +99,13 @@ function createRandomSVG() {
 	});
 }
 
+function isMobile() {
+    const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    return mobileRegex.test(navigator.userAgent);
+}
+
 window.addEventListener("load", function () {
-	for (let index = 0; index < rndI(75, 150); index++) {
+	for (let index = 0; index < rndI((isMobile() ? 10 : 75), (isMobile() ? 25 : 150)); index++) {
 		createRandomSVG();
 	}
 });
@@ -112,7 +117,7 @@ for (let i = 0; i < rndI(75, 150); i++) {
 $(function () {
 	var body = $('#starshine'),
 		template = $('.template.shine'),
-		stars = 100,
+		stars = (isMobile() ? 20 : 100),
 		sparkle = 20;
 
 

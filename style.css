@@ -113,7 +113,7 @@ body,
 body * {
 	font-family: "Geologica", normal !important;
 	font-weight: normal !important;
-	font-size: 32px !important;
+	font-size: 28px !important;
 }
 
 h3,
@@ -122,16 +122,19 @@ h4,
 h4 * {
 	font-family: "Geologica", sans-serif !important;
 	font-weight: 900 !important;
-	font-size: 48px !important;
+	font-size: 40px !important;
 }
 
 body main {
-	border-radius: 32px;
+	border-radius: 28px;
 	border-width: 2px;
 	border-style: solid;
 	background-color: #000000a0 !important;
 }
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 0px !important;
+}
 .wrapper {
 	content: "";
 	position: fixed;
@@ -178,13 +181,13 @@ button:hover {
 button {
 	font-family: "SuperMario256CustomFont", sans-serif !important;
 	font-weight: normal;
-	font-size: 32px !important;
-	letter-spacing: 4px !important;
-	padding: 0.6rem !important;
+	font-size: 3vw !important;
+	letter-spacing: 3px !important;
+	padding: 0.5rem !important;
 	background-color: shadowBox;
 	color: white;
 	padding: 1rem;
-	margin: 0 10px !important;
+	margin: 0 4px !important;
 	overflow: hidden;
 	border-radius: 16px;
 	box-shadow: -10px -10px 20px rgba(32, 32, 32, 0.5);
