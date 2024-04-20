@@ -39,12 +39,10 @@
 body {
     background: #888888;
     font-family: 'Noto Sans', sans-serif;
-}
-
-body.retro {
     color: #000000;
     background: url("hats.png") #ffffff fixed repeat top left / 15%;
     animation: bgscroll 30s linear infinite;
+    text-align: center;
 }
 
 body.dark {
@@ -67,11 +65,11 @@ header button {
 }
 
 main {
-    background-color: #ffffffee;
+    background-color: #ffffffce;
 }
 
 body.dark main {
-    background-color: #000000ee;
+    background-color: #000000ce;
 }
 
 body.retro .dx {
@@ -82,10 +80,10 @@ body.retro .dx {
     color: #ec7731;
 }
 
-h3 {
+h1 {
     color: #ff0000;
 }
 
-h4 {
+h2 {
     color: #0000ff;
 }

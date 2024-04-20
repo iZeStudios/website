@@ -31,18 +31,18 @@
 </head>
 <body class="retro">
     <header class="sticky-top text-center container p-2">
-        <button type="button" id="retro">Reduce Eyestrain</button>
         <button type="button" id="dark">Dark Mode</button>
+        <button type="button" onclick="location.href='https:\/\/mods.sm64coopdx.com'">Mod Site</button>
         <button type="button" onclick="location.href='/'">Main Page</button>
     </header>
     <main class="container p-md-4">
         <div class="container text-center py-4"><img src="logo.png" class="w-50" alt="sm64coopdx Logo"></div>
 
-        <h3>sm64coopdx v0.2 - 3.14 Update</h3>
+        <h1>sm64coopdx v0.2 - 3.14 Update</h1>
         <p>Pi!</p>
         <p>Released on March 14th, 2024 at 7:00 PM EST</p>
-        <h3>Changelog (81 commits):</h3>
-        <h4>Changes:</h4>
+        <h1>Changelog (81 commits):</h1>
+        <h2>Changes:</h2>
         <p>Added an update checker to notify people of new updates (Agent X)</p>
         <p>Made the version on the main menu always the sm64coopdx version (Agent X)</p>
         <p>Added over 40 missing gfx symbols to the DynOS parser (Agent X)</p>
@@ -62,7 +62,7 @@
         <p>Partially rewrote launch parameter code (Agent X)</p>
         <p>Added --hide-loading-screen param (Agent X)</p>
         <p>Increased vertical tilt range and disabled tilt centering while sliding for free cam (xLuigiGamerx)</p>
-        <h4>Fixes:</h4>
+        <h2>Fixes:</h2>
         <p>Fixed console not being openable from the main menu (Agent X)</p>
         <p>Fixed interpolated rectangles using the wrong resolution (Cooliokid 956)</p>
         <p>Fixed SDL2 linux compositor with X11 (Dominicentek)</p>
@@ -78,7 +78,7 @@
         <p>Fixed the cake screen cutting off and returning to the entry level too early (Agent X)</p>
         <p>Fixed hoot having invisible wings (Agent X)</p>
         <p>Fixed ludicrous char width on '¿' (Agent X)</p>
-        <h4>Lua API Changes:</h4>
+        <h2>Lua API Changes:</h2>
         <p>Added the ability to have global star IDs (Agent X)</p>
         <p>Added the ability to not show star collection dialogs (Agent X)</p>
         <p>Allowed FONT_HUD to have texture filtering (Agent X)</p>
@@ -96,28 +96,28 @@
         <p>Total functions: 1573</p>
         <p>Total structs: 82</p>
         <br>
-        <h4>Mod Changes:</h4>
+        <h2>Mod Changes:</h2>
         <p>Made Hide & Seek disable the pause menu camera zoom out (Agent X)</p>
         <p>Updated Character Select to v1.7 (Agent X)</p>
         <p>Updated Toadette's model in [CS] Extra Characters (AngelicMiracles)</p>
         <p>Updated Arena and added Blimp City, new music for levels and fixed KOTH, Rainbow Road collision and level lighting direction (AngelicMiracles)</p>
         <br>
-        <h3>sm64coopdx v0.1.4 - Valentines Update</h3>
+        <h1>sm64coopdx v0.1.4 - Valentines Update</h1>
         <p>Released on February 19th, 2024 at 10:00 AM EST</p>
-        <h3>Changelog (26 commits):</h3>
-        <h4>Changes:</h4>
+        <h1>Changelog (26 commits):</h1>
+        <h2>Changes:</h2>
         <p>Disabled credits camera control easter egg if on the title screen (Agent X)</p>
         <p>Increased Mod Storage key/value length to 256 (Agent X)</p>
         <p>Added option to disable gamepads (Agent X)</p>
         <p>Made the changelog have pages (Agent X)</p>
-        <h4>Fixes:</h4>
+        <h2>Fixes:</h2>
         <p>Fixed compilation error with DISCORD_SDK=0 (Agent X)</p>
         <p>Fixed potential Mod Storage crashes (Agent X)</p>
         <p>Fixed macOS Arm compilation (Agent X)</p>
         <p>Fixed broken unicode characters (Agent X)</p>
         <p>Fixed DynOS not allowing the '/' character in the HUD font to be edited (xLuigiGamerx)</p>
         <p>Fixed custom level reverb (Agent X)</p>
-        <h4>Lua API Changes:</h4>
+        <h2>Lua API Changes:</h2>
         <p>Fixed Lua not allowing over exposure in marioBodyState light and shade values (Agent X)</p>
         <p>Fixed djui_hud_get_color() returning a pointer to the current color instead of a copy (Agent X)</p>
         <p>Added FONT_ALIASED, which uses Mr. Porkchop's improved smooth font atlas (Agent X, Mr. Porkchop)</p>
@@ -127,13 +127,13 @@
         <br>
         <p>Added 4 constants (total 3979)</p>
         <br>
-        <h4>Mod Changes:</h4>
+        <h2>Mod Changes:</h2>
         <p>Removed Sex in Minecraft as it was only a joke to draw Vinny or Joel into playing (Agent X)</p>
         <br>
-        <h3>sm64coopdx v0.1.3 - New Years Update</h3>
+        <h1>sm64coopdx v0.1.3 - New Years Update</h1>
         <p>Released on January 1st, 2023 at 5:00 PM EST</p>
-        <h3>Changelog (38 commits):</h3>
-        <h4>Changes:</h4>
+        <h1>Changelog (38 commits):</h1>
+        <h2>Changes:</h2>
         <p>Made Lua error logging more readable (krmeet)</p>
         <p>Made GitHub README clearer (expected-ingot)</p>
         <p>Made capitalization of some menu strings consistent in English.ini (Agent X)</p>
@@ -142,7 +142,7 @@
         <p>Re-added credits camera movement easter egg but with the player 1 controller this time (Agent X)</p>
         <p>Made default network player ping 50 again from 600 (Agent X)</p>
         <p>Made player text color base off of CAP color instead of SHIRT color (Agent X)</p>
-        <h4>Fixes:</h4>
+        <h2>Fixes:</h2>
         <p>Fixed incompatibility tags only registering the first one (krmeet)</p>
         <p>Fixed linker errors with macOS (motoo-tobbler)</p>
         <p>Fixed corrupted mod levels showing up on the main menu (Agent X)</p>
@@ -150,7 +150,7 @@
         <p>Fixed singleplayer not forcing direct connection (Agent X)</p>
         <p>Fixed water camera and TTM star cutscene in first person (Agent X)</p>
         <p>Fixed random crashes with built-in mods (Agent X)</p>
-        <h4>Lua API Changes:</h4>
+        <h2>Lua API Changes:</h2>
         <p>Allowed over exposure (>255) in marioBodyState light and shade values (Agent X)</p>
         <p>Undefined SM64COOPDX_VERSION if sm64ex-coop compatibility is on (Agent X)</p>
         <p>Added get_coop_compatibility_enabled() (Agent X)</p>
@@ -159,33 +159,33 @@
         <p>Added 1 function (total 1564)</p>
         <p>Added 16 structs (total 100)</p>
         <br>
-        <h4>Mod Changes:</h4>
+        <h2>Mod Changes:</h2>
         <p>Fixed custom music bug and updated rainbow level with Arena (Agent X)</p>
         <p>Updated mQuake (0x2480)</p>
         <p>Re-added Hide and Seek (Agent X)</p>
         <p>Updated Day Night Cycle DX (Agent X)</p>
         <p>Updated Gun Mod DX (Agent X)</p>
         <br>
-        <h3>sm64coopdx v0.1.2 - Christmas Update</h3>
+        <h1>sm64coopdx v0.1.2 - Christmas Update</h1>
         <p>Released on December 24th, 2023 at 5:00 PM EST</p>
-        <h3>Changelog (20 commits):</h3>
-        <h4>Changes:</h4>
+        <h1>Changelog (20 commits):</h1>
+        <h2>Changes:</h2>
         <p>Disabled sm64ex-coop Compatibility by default</p>
         <p>Restored Luigi's original color palette</p>
         <p>Corrected palette name "N64 Memories" to "64 Memories" as intended</p>
         <p>Updated language files</p>
         <p>Added changelog panel</p>
         <p>Added --console launch parameter</p>
-        <h4>Fixes:</h4>
+        <h2>Fixes:</h2>
         <p>Reverted dialog cutscene changes to prevent softlocks</p>
         <p>Fixed DynOS related crashes</p>
         <p>Fixed Mario's shadow not resetting</p>
         <p>Fixed 32-bit compilation</p>
-        <h4>Lua API Changes:</h4>
+        <h2>Lua API Changes:</h2>
         <p>Made mario step code use his hitbox height instead of a constant number for his height</p>
         <p>Hid Mario's shadow in First Person</p>
         <p>Cancelled First Person if Mario is flying</p>
-        <h4>Mod Changes:</h4>
+        <h2>Mod Changes:</h2>
         <p>Updated Gun Mod DX to v3.0.1</p>
         <p>Updated Day Night Cycle DX description</p>
         <p>Updated SiM description</p>
@@ -194,10 +194,10 @@
         <p>Removed Flood because it's just better that way for mods that get updates more than once every year or something</p>
         <p>Removed Cheats because it's just not made very well and I have future plans to reimplement Cheats into the base game as I don't agree with the removal of them</p>
         <br>
-        <h3>sm64coopdx v0.1</h3>
+        <h1>sm64coopdx v0.1</h1>
         <p>Released on December 18th, 2023 at 5:00 PM EST</p>
-        <h3>Changelog (368 commits):</h3>
-        <h4>Changes:</h4>
+        <h1>Changelog (368 commits):</h1>
+        <h2>Changes:</h2>
         <p>Added centerable DJUI Themes, Light, Dark, File Select and Mario (Agent X)</p>
         <p>Added manual DJUI scaling (Agent X)</p>
         <p>Replaced upscaled font back to the original dialog one (Agent X)</p>
@@ -245,7 +245,7 @@
         <p>Updated default config values (Agent X)</p>
         <p>Restored old Yoshi behavior (Agent X)</p>
         <p>Made Ice Luigi palette name change to something else on April 1st (Agent X)</p>
-        <h4>Bug Fixes:</h4>
+        <h2>Bug Fixes:</h2>
         <p>Fixed gServerSettings.enablePlayersInLevelDisplay and gServerSettings.enablePlayerList not resetting on disconnect (Agent X)</p>
         <p>Fixed the colon in chat messages being colored by a colored name (Agent X)</p>
         <p>Fixed the "@ entered this level" notification not showing (Agent X)</p>
@@ -269,7 +269,7 @@
         <p>Fixed chat and console still allowing mouse look (Agent X)</p>
         <p>Fixed being set to idle in dialogs (Agent X)</p>
         <p>Fixed Mario shadow settings not resetting on main menu (Agent X)</p>
-        <h4>Lua API Changes:</h4>
+        <h2>Lua API Changes:</h2>
         <p>Fixed floats not registering as constants (Agent X)</p>
         <p>Added SM64COOPDX_VERSION constant for checking whether or not the game is DX (Agent X)</p>
         <p>Made FONT_TINY and FONT_NORMAL the same (Agent X)</p>
@@ -306,7 +306,7 @@
         <p>Added 18 functions (total 1563)</p>
         <p>Added 7 structs (total 84)</p>
         <p>Added 31 fields (total 2029)</p>
-        <h4>Lua Mod Changes:</h4>
+        <h2>Lua Mod Changes:</h2>
         <p>Improved PSC (Agent X)</p>
         <p>Removed Shell Rush (Agent X)</p>
         <p>Removed Character Movesets (Agent X)</p>
@@ -322,8 +322,8 @@
         <p>Added Gun Mod DX (Agent X)</p>
     </main>
     <footer class="text-center p-2">
-        <p>&copy; Coop <span class="dx">Deluxe</span> Team 2023</p>
-        <button type="button" onclick="localStorage.clear()">reset preferences</button>
+        <p>&copy; Coop <span class="dx">Deluxe</span> 2024</p>
+        <button type="button" onclick="localStorage.clear()">Reset Preferences</button>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="retro.js"></script>
