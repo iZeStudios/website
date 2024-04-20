@@ -487,18 +487,18 @@ a:active {
 }
 
 .shine.small {
-	width: 50px;
-	height: 50px;
+	width: 4vw;
+	height: 4vw;
 }
 
 .shine.medium {
-	width: 75px;
-	height: 75px;
+	width: 6vw;
+	height: 6vw;
 }
 
 .shine.large {
-	width: 100px;
-	height: 100px;
+	width: 8vw;
+	height: 8vw;
 }
 
 @-webkit-keyframes glitter {

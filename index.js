@@ -105,19 +105,19 @@ function isMobile() {
 }
 
 window.addEventListener("load", function () {
-	for (let index = 0; index < rndI((isMobile() ? 10 : 75), (isMobile() ? 25 : 150)); index++) {
+	for (let index = 0; index < rndI((isMobile() ? 10 : 50), (isMobile() ? 20 : 100)); index++) {
 		createRandomSVG();
 	}
 });
 
-for (let i = 0; i < rndI(75, 150); i++) {
+for (let i = 0; i < rndI((isMobile() ? 10 : 50), (isMobile() ? 20 : 100)); i++) {
 	createRandomSVG();
 }
 
 $(function () {
 	var body = $('#starshine'),
 		template = $('.template.shine'),
-		stars = (isMobile() ? 20 : 100),
+		stars = (isMobile() ? 20 : 80),
 		sparkle = 20;
 
 
