@@ -1,423 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- w3c -->
-		<title>Coop Deluxe</title>
-		<!-- opengraph -->
-		<meta property="og:image" content="logo.png"/>
-		<meta property="og:image:alt" content="sm64coopdx"/>
-		<meta property="og:image:width" content="1024"/>
-		<meta property="og:image:height" content="512"/>
-		<meta property="og:site_name" content="Coop Deluxe"/>
-		<meta property="og:type" content="website"/>
-		<meta property="og:title" content="Coop Deluxe"/>
-		<meta property="og:url" content="index.html"/>
-		<meta property="og:description" content="An actively maintained fork of sm64ex-coop with more features, customizability and power to the Lua API."/>
-		<!-- twitter card -->
-		<meta name="twitter:image:src" content="logo.png"/>
-		<meta name="twitter:site" content="index.html"/>
-		<meta name="twitter:title" content="Coop Deluxe"/>
-		<meta name="twitter:description" content="An actively maintained fork of sm64ex-coop with more features, customizability and power to the Lua API."/>
-		<!-- links -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="Geologica.css">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="container">
-				<ul id="idsvglist" class="svgwrapper"></ul>
-			</div>
-		</div>
-		<div class="contentdiv">
-		<header class="sticky-top text-center container p-2">
-			<button type="button" onclick="navigateToPage('sm64coopdx-main-page')">Home</button>
-			<button type="button" onclick="location.href='https://mods.sm64coopdx.com/mods'">Mods</button>
-			<button type="button" onclick="location.href='https://mods.sm64coopdx.com'">Forum</button>
-			<button type="button" onclick="navigateToPage('sm64coopdx-changelog-page')">Changelog</button>
-		</header>
-		<main class="container p-md-4">
-			<div class="container text-center py-4 glowing-image">
-			<div id="starshine">
-				<img id="shineimg" src="logo.png" class="w-80 zoom-animation" alt="sm64coopdx Logo"/>
-				<div class="template shine"/>
-				</div>
-			</div>
-			<div id="sm64coopdx-main-page" class="sm64coopdx-page">
-				<h3>What is Coop <span class="dx">Deluxe</span>?</h3>
-				<p>We are a team of people working to make the best Super Mario 64 Co-op experience there is. Initially, the Coop Deluxe team started off as a group of people working on a fork for sm64ex-coop, but after days of discussion, we have merged together to be one team working on one big project.</p>
-				<p><strong>sm64coop<span class="dx">dx</span></strong> is an online multiplayer project for the Super Mario 64 PC port, started by the Coop Deluxe Team. Its purpose is to actively maintain and improve, but also to continue sm64ex-coop, an original idea from djoslin0. More features, customizability, and power to the Lua API allow modders and players to enjoy Super Mario 64 more than ever!</p>
-				<br><br>
-				<h3>MERGER!</h3>
-				<h4>sm64ex-coop</h4>
-				<img src="dj.png" alt="djoslin0's announcement" width="100%" class="modimg">
-				<br><br>
-				<h4>Coop Café</h4>
-				<img src="agent.png" alt="Agent's announcement" width="100%" class="modimg">
-				<br><br><br>
-				<h3>DOWNLOAD!</h3>
-				<p>Download coopdx-patcher <a href="https://github.com/coop-deluxe/coopdx-patcher/releases/latest/download/coopdx-patcher.zip">here</a> and drag a <code>.z64</code> ROM of SM64 onto the window to get started!</p>
-				<br>
-				<h3>SOURCE CODE!</h3>
-				<p>You can take a look on our <a href="https://github.com/coop-deluxe">GitHub</a>!</p>
-				<br><br>
-				<h3>sm64coop<span class="dx">dx</span> has shiny new built-in mods!</h3>
-				<div class="container text-center">
-					<div class="row g-4">
-						<h4>Gun Mod <span class="dx">DX</span></h4>
-						<div class="col-md-6">
-							<img src="gun1.png" alt="Gun Mod screenshot" width="100%" class="modimg">
-						</div>
-						<div class="col-md-6">
-							<img src="gun2.png" alt="Gun Mod screenshot" width="100%" class="modimg">
-						</div>
-						<p>This is a complete rewrite of <span>Agent X</span>'s first mod, Gun Mod. Originally made for sm64ex-coop and not made out to what it could be due to a lack of experience, the old Gun Mod was not the greatest and had much room for improvement. Taking the opportunity, <span>Agent X</span> decided this would be one of the two mods he was going to overhaul to be bundled in with <strong>sm64coop<span class="dx">dx</span></strong>.</p>
-						<br>
-						<h4>Day Night Cycle <span class="dx">DX</span></h4>
-						<div class="col-md-6">
-							<img src="daynight1.png" alt="Day-Night Cycle screenshot" width="100%" class="modimg">
-						</div>
-						<div class="col-md-6">
-							<img src="daynight2.png" alt="Day-Night Cycle screenshot" width="100%" class="modimg">
-						</div>
-						<p>This is a graphically overhauled and functionally improved version of <span>Agent X</span>'s technically impressive Day Night Cycle. Originally limited by the lack of graphical altering functionality in Lua and knowing trying to implement it would likely get turned down by the developers, <span>Agent X</span> decided to only change the lighting direction and render a rectangle on the HUD to give the illusion of it being darker. This of course, didn't look very good, and now with the ability to change vertex color, light color, fog color, fog intensity the graphics of this mod have been majorly improved.</p>
-					</div>
-				</div>
-				<br><br>
-				<h3>SM64 Coop Deluxe Team:</h3>
-				<h4>Developers:</h4>
-				<ul class="list-unstyled">
-					<li><a href="https://github.com/Agent-11">Agent X: Lead Developer</a></li>
-					<li>
-						<a href="https://github.com/theclashingfritz">
-							Prince Frizzy: Lead Developer
-					</li>
-					<li><a href="https://github.com/FluffaMario">FluffaMario: Model Designer</a></li>
-					<li><a href="https://github.com/Isaac0-dev">Issac: Developer</a></li>
-					<li><a href="https://github.com/AngelicMiracles">Yuyake: Creative Director</a></li>
-				</ul>
-				<h4>Contributors:</h4>
-				<ul class="list-unstyled">
-					<li><a href="https://github.com/eros71-dev">eros71: Tester, Contributor</a></li>
-					<li><a href="https://twitter.com/Pup64HCP">Pup64HCP: Website Designer</a></li>
-					<li><a href="https://github.com/PeachyPeachSM64">PeachyPeach: Contributor</a></li>
-					<li><a href="https://github.com/krmeet">kermeet: Contributor</a></li>
-					<li><a href="https://github.com/AleNinten">Ale64: Palette Designer, Contributor</a></li>
-					<li><a href="https://github.com/SharenTheCat">Sharen: Contributor</a></li>
-					<li><a href="https://github.com/gheskett">ArcticJaguar725: Fixing the sound engine enough to support Toad's voice, Contributor</a></li>
-					<li><a href="https://twitter.com/PlatforminMike">mike_dobukai: Logo Designer</a></li>
-					<li><a href="https://youtube.com/@mrPorkchopCG">Mr. Porkchop: Providing new aliased font, Contributor</a></li>
-					<li><a href="https://github.com/expected-ingot">crapbass: Contributor</a></li>
-					<li><a href="https://github.com/Dominicentek">Dominicentek: Contributor</a></li>
-					<li><a href="https://github.com/Cooliokid956">Cooliokid 956: Contributor</a></li>
-				</ul>
-				<br><br>
-				<h3>FAQs with <span>Agent X</span></h3>
-				<dl>
-					<dt class="fqa-question">Q: When is the Android port coming out?</dt>
-					<dd class="fqa-answer">An Android port is not guarenteed as it will only exist if someone makes it. While I am against the idea of an Android port due to the kids mainly, I won't make an effort to stop someone if they do decide to make it. So yeah, we are not really the people who decide if there's an android port or not, and if we were, I would delay it by a month everytime someone asked about it.</dd>
-					<dt class="fqa-question">Q: How do I join the Discord server?</dt>
-					<dd class="fqa-answer">A: The Discord server is a closed server that gains new people by friend to friend inviting. We have it this way for two reasons. One, large public community servers <strong>fester toxicity</strong> quickly and are harder to moderate. Two, we want this server to be <strong>a chill place where people can talk and show off things,</strong> not a daycare center.</dd>
-					<dt class="fqa-question">Q: Do I need the original sm64ex-coop for this?</dt>
-					<dd class="fqa-answer">A: No, with the patcher all you need to do is drag a ROM onto it and it will automatically output an executable, no need for sm64ex-coop.</dd>
-					<dt class="fqa-question">Q: Is the patcher cross-platform?</dt>
-					<dd class="fqa-answer">A: It is Windows only, at least for now. I made it using .NET Framework 4.7 so older computers can run it without any compatibility issues.</dd>
-					<dt class="fqa-question">Q: Where can I suggest things or report bugs if I'm not in the Discord?</dt>
-					<dd class="fqa-answer">A: You can suggest things or report bugs on the GitHub repository OR the <a href="https://mods.sm64coopdx.com">new mod site</a>.</dd>
-				</dl>
-				<br>
-				<p>Also, it's called sm64coopdx, not sm64ex-coop dx, not sm64dx-coop.</p>
-			</div>
-			<div id="sm64coopdx-changelog-page" class="sm64coopdx-page" style="display:none; text-align:left !important;">
-				<h3>sm64coopdx v0.2 - 3.14 Update</h3>
-				<p>Pi!</p>
-				<p>Released on March 14th, 2024 at 7:00 PM EST</p>
-				<h3>Changelog (81 commits):</h3>
-				<h4>Changes:</h4>
-				<p>• Added an update checker to notify people of new updates (Agent X)</p>
-				<p>• Made the version on the main menu always the sm64coopdx version (Agent X)</p>
-				<p>• Added over 40 missing gfx symbols to the DynOS parser (Agent X)</p>
-				<p>• Increased object pool capacity from 960 to 1200 (Agent X)</p>
-				<p>• Made Mario & Luigi cap emblems use the shirt color (Agent X)</p>
-				<p>• Moved changelog to the info panel (Agent X)</p>
-				<p>• Added a properly implemented vanilla singleplayer pause (Agent X)</p>
-				<p>• Restored the vanilla pause menu red coin display if there are 8 (Agent X)</p>
-				<p>• Restored vanilla camera zoom out with singleplayer (this is toggleable through gLevelValues.zoomOutCameraOnPause) (Agent X)</p>
-				<p>• Forced DynOS and player panels to be uncentered (Agent X)</p>
-				<p>• Made the light & dark theme panel backgrounds slightly less opaque (Agent X)</p>
-				<p>• Disabled any vertex rounding when generating DynOS actors (Agent X)</p>
-				<p>• Added option to only apply DynOS playermodels onto the local player (Agent X)</p>
-				<p>• Made dirt particle vertex colorable (Agent X)</p>
-				<p>• Allowed players to bounce on mid air players' heads (Agent X)</p>
-				<p>• Made recovery hearts only heal the last person who touched it (Agent X)</p>
-				<p>• Partially rewrote launch parameter code (Agent X)</p>
-				<p>• Added --hide-loading-screen param (Agent X)</p>
-				<p>• Increased vertical tilt range and disabled tilt centering while sliding for free cam (xLuigiGamerx)</p>
-				<h4>Fixes:</h4>
-				<p>• Fixed console not being openable from the main menu (Agent X)</p>
-				<p>• Fixed interpolated rectangles using the wrong resolution (Cooliokid 956)</p>
-				<p>• Fixed SDL2 linux compositor with X11 (Dominicentek)</p>
-				<p>• Fixed memory leak with custom animations that caused strange glitches (Agent X)</p>
-				<p>• Fixed sm64coopdx exclusive features still working when hosting sm64ex-coop servers (Agent X)</p>
-				<p>• Fixed a bizzare bug with perfect frame pausing causing you to go to seemingly random warp nodes (Isaac)</p>
-				<p>• Fixed 1 player lobbies saying "Waiting for players..." (Agent X)</p>
-				<p>• Fixed the --help launch parameter not outputting anything (Agent X)</p>
-				<p>• Fixed --server jank by basically rewriting how it works (Agent X)</p>
-				<p>• Fixed the mouse disappearing forever on the window after closing the chat (Agent X)</p>
-				<p>• Fixed the bugs with transitions such as delays, not being able to pause, flashing, playing repeatedly (Agent X)</p>
-				<p>• Fixed inconsistent capitalization on the loading screen (Agent X)</p>
-				<p>• Fixed the cake screen cutting off and returning to the entry level too early (Agent X)</p>
-				<p>• Fixed hoot having invisible wings (Agent X)</p>
-				<p>• Fixed ludicrous char width on '¿' (Agent X)</p>
-				<h4>Lua API Changes:</h4>
-				<p>• Added the ability to have global star IDs (Agent X)</p>
-				<p>• Added the ability to not show star collection dialogs (Agent X)</p>
-				<p>• Allowed FONT_HUD to have texture filtering (Agent X)</p>
-				<p>• Added the ability to change window title (Agent X)</p>
-				<p>• Added the ability to get the global timer (Agent X)</p>
-				<p>• Added get and set functions for the HUD star flash (Agent X)</p>
-				<p>• Added HUD_DISPLAY_CAMERA_STATUS for hud_get_value() (Agent X)</p>
-				<p>• Exposed level_control_timer_running() to check if the timer is running (Agent X)</p>
-				<p>• Raised max BASS audio files from 128 to 256 (Agent X)</p>
-				<p>• Added '-- pausable' field so mods can mark themselves as being able to function when the game is paused in singleplayer (Agent X)</p>
-				<p>• Added ENVFX_MODE_NO_OVERRIDE constant to clarify set_override_envfx() usage (Agent X)</p>
-				<p>• Added OBJ_LIST_EXT for Lua mods to use just in case (Agent X)</p>
-				<p>• [Total constants: 3981]</p>
-				<p>• [Total functions: 1573]</p>
-				<p>• [Total structs: 82]</p>
-				<h4>Mod Changes:</h4>
-				<p>• Made Hide & Seek disable the pause menu camera zoom out (Agent X)</p>
-				<p>• Updated Character Select to v1.7 (Agent X)</p>
-				<p>• Updated Toadette's model in [CS] Extra Characters (AngelicMiracles)</p>
-				<p>• Updated Arena and added Blimp City, new music for levels and fixed KOTH, Rainbow Road collision and level lighting direction (AngelicMiracles)</p>
-				<br>
-				<br>
-				<h3>sm64coopdx v0.1.4 - Valentines Update</h3>
-				<p>Released on February 19th, 2024 at 10:00 AM EST</p>
-				<h3>Changelog (26 commits):</h3>
-				<h4>Changes:</h4>
-				<p>• Disabled credits camera control easter egg if on the title screen (Agent X)</p>
-				<p>• Increased Mod Storage key/value length to 256 (Agent X)</p>
-				<p>• Added option to disable gamepads (Agent X)</p>
-				<p>• Made the changelog have pages (Agent X)</p>
-				<h4>Fixes:</h4>
-				<p>• Fixed compilation error with DISCORD_SDK=0 (Agent X)</p>
-				<p>• Fixed potential Mod Storage crashes (Agent X)</p>
-				<p>• Fixed macOS Arm compilation (Agent X)</p>
-				<p>• Fixed broken unicode characters (Agent X)</p>
-				<p>• Fixed DynOS not allowing the '/' character in the HUD font to be edited (xLuigiGamerx)</p>
-				<p>• Fixed custom level reverb (Agent X)</p>
-				<h4>Lua API Changes:</h4>
-				<p>• Fixed Lua not allowing over exposure in marioBodyState light and shade values (Agent X)</p>
-				<p>• Fixed djui_hud_get_color() returning a pointer to the current color instead of a copy (Agent X)</p>
-				<p>• Added FONT_ALIASED, which uses Mr. Porkchop's improved smooth font atlas (Agent X, Mr. Porkchop)</p>
-				<p>• Added FONT_CUSTOM_HUD, a version of the HUD font containing all of the unicode characters (xLuigiGamerx)</p>
-				<p>• Added FONT_RECOLOR_HUD, a recolorable version of FONT_CUSTOM_HUD (xLuigiGamerx)</p>
-				<p>• Added HOOK_ON_PLAY_SOUND, a hook that is called whenever a sound is going to play (Agent X)</p>
-				<p>• [Added 4 constants (total 3979)]</p>
-				<h4>Mod Changes:</h4>
-				<p>• Removed Sex in Minecraft as it was only a joke to draw Vinny or Joel into playing (Agent X)</p>
-				<br>
-				<br>
-				<h3>sm64coopdx v0.1.3 - New Years Update</h3>
-				<p>Released on January 1st, 2023 at 5:00 PM EST</p>
-				<h3>Changelog (38 commits):</h3>
-				<h4>Changes:</h4>
-				<p>• Made Lua error logging more readable (krmeet)</p>
-				<p>• Made GitHub README clearer (expected-ingot)</p>
-				<p>• Made capitalization of some menu strings consistent in English.ini (Agent X)</p>
-				<p>• Removed the need to restart to change sm64ex-coop compatibility (Agent X)</p>
-				<p>• Improved Discord rich presence by adding images (Agent X)</p>
-				<p>• Re-added credits camera movement easter egg but with the player 1 controller this time (Agent X)</p>
-				<p>• Made default network player ping 50 again from 600 (Agent X)</p>
-				<p>• Made player text color base off of CAP color instead of SHIRT color (Agent X)</p>
-				<h4>Fixes:</h4>
-				<p>• Fixed incompatibility tags only registering the first one (krmeet)</p>
-				<p>• Fixed linker errors with macOS (motoo-tobbler)</p>
-				<p>• Fixed corrupted mod levels showing up on the main menu (Agent X)</p>
-				<p>• Fixed crash with disconnect key on star select screen (Agent X)</p>
-				<p>• Fixed singleplayer not forcing direct connection (Agent X)</p>
-				<p>• Fixed water camera and TTM star cutscene in first person (Agent X)</p>
-				<p>• Fixed random crashes with built-in mods (Agent X)</p>
-				<h4>Lua API Changes:</h4>
-				<p>• Allowed over exposure (>255) in marioBodyState light and shade values (Agent X)</p>
-				<p>• Undefined SM64COOPDX_VERSION if sm64ex-coop compatibility is on (Agent X)</p>
-				<p>• Added get_coop_compatibility_enabled() (Agent X)</p>
-				<p>• Added gControllers (Agent X)</p>
-				<p>• [Added 1 function (total 1564)]</p>
-				<p>• [Added 16 structs (total 100)]</p>
-				<h4>Mod Changes:</h4>
-				<p>• Fixed custom music bug and updated rainbow level with Arena (Agent X)</p>
-				<p>• Updated mQuake (0x2480)</p>
-				<p>• Re-added Hide and Seek (Agent X)</p>
-				<p>• Updated Day Night Cycle DX (Agent X)</p>
-				<p>• Updated Gun Mod DX (Agent X)</p>
-				<br>
-				<br>
-				<h3>sm64coopdx v0.1.2 - Christmas Update</h3>
-				<p>Released on December 24th, 2023 at 5:00 PM EST</p>
-				<h3>Changelog (20 commits):</h3>
-				<h4>Changes:</h4>
-				<p>• Disabled sm64ex-coop Compatibility by default</p>
-				<p>• Restored Luigi's original color palette</p>
-				<p>• Corrected palette name "N64 Memories" to "64 Memories" as intended</p>
-				<p>• Updated language files</p>
-				<p>• Added changelog panel</p>
-				<p>• Added --console launch parameter</p>
-				<h4>Fixes:</h4>
-				<p>• Reverted dialog cutscene changes to prevent softlocks</p>
-				<p>• Fixed DynOS related crashes</p>
-				<p>• Fixed Mario's shadow not resetting</p>
-				<p>• Fixed 32-bit compilation</p>
-				<h4>Lua API Changes:</h4>
-				<p>• Made mario step code use his hitbox height instead of a constant number for his height</p>
-				<p>• Hid Mario's shadow in First Person</p>
-				<p>• Cancelled First Person if Mario is flying</p>
-				<h4>Mod Changes:</h4>
-				<p>• Updated Gun Mod DX to v3.0.1</p>
-				<p>• Updated Day Night Cycle DX description</p>
-				<p>• Updated SiM description</p>
-				<p>• Updated Character Select to v1.5.3</p>
-				<p>• Updated mQuake</p>
-				<p>• Removed Flood because it's just better that way for mods that get updates more than once every year or something</p>
-				<p>• Removed Cheats because it's just not made very well and I have future plans to reimplement Cheats into the base game as I don't agree with the removal of them</p>
-				<br>
-				<br>
-				<h3>sm64coopdx v0.1</h3>
-				<p>Released on December 18th, 2023 at 5:00 PM EST</p>
-				<h3>Changelog (368 commits):</h3>
-				<h4>Changes:</h4>
-				<p>• Added centerable DJUI Themes, Light, Dark, File Select and Mario (Agent X)</p>
-				<p>• Added manual DJUI scaling (Agent X)</p>
-				<p>• Replaced upscaled font back to the original dialog one (Agent X)</p>
-				<p>• Replaced main menu "sm64ex-coop" text with a custom logo (Agent X)</p>
-				<p>• Replaced loading screen "sm64ex-coop" text with a custom logo (Agent X)</p>
-				<p>• Added Nametags server option into the base game and made them smoother (Agent X)</p>
-				<p>• Added Bouncy Level Bounds server option into the game from sm64js (Agent X)</p>
-				<p>• Added DynOS and mods refresh buttons (Agent X)</p>
-				<p>• Added basic sm64ex-coop compatibility layer (Agent X)</p>
-				<p>• Improved Mario, Luigi, Toad and Wario models along with their caps (FluffaMario)</p>
-				<p>• Added New Metal Cap effect for the characters (FluffaMario)</p>
-				<p>• Gave Toad a new voice (Agent X, ninten_king_64)</p>
-				<p>• Added Player and DynOS Pack buttons next to each other in the options (Agent X)</p>
-				<p>• Removed unnecessary buttons and decluttered in the pause menu (Agent X)</p>
-				<p>• Added Trans Goomba and a custom pipe model as DynOS Packs by default (Agent X)</p>
-				<p>• Added the ability to set max players to 1 (Agent X)</p>
-				<p>• Added additional support for up to 128 SFX channels (ArcticJaguar725)</p>
-				<p>• Made fading out distant sounds off by default for vanilla parity reasons (Agent X)</p>
-				<p>• Improved chat commands (Agent X)</p>
-				<p>• Made HUD icons use a custom texture instead of a font character (Agent X)</p>
-				<p>• Added C-Up to Free Camera as an option in Camera (Agent X)</p>
-				<p>• Cleaned up console printing (Agent X)</p>
-				<p>• Increased max simultaneous notes even more (Agent X)</p>
-				<p>• Added Spanish regional language variants (eros71)</p>
-				<p>• Increased mod max description length from 512 to 700 (Agent X)</p>
-				<p>• Added WDW as title screen background (Agent X)</p>
-				<p>• Added the Credits Staff Roll as a title screen background option (Agent X)</p>
-				<p>• Added Misc -> Info panel (Agent X)</p>
-				<p>• Added back arrow to selectionboxes (Agent X)</p>
-				<p>• Reverted new pressed_pause behavior (Agent X)</p>
-				<p>• Added disconnect key (Agent X)</p>
-				<p>• Added the ability to change skybox texture tiles with DynOS Packs (Agent X)</p>
-				<p>• Reverted the new ugly panel console (Agent X)</p>
-				<p>• Established sm64coopdx versioning system, starting with v0.1 (Agent X)</p>
-				<p>• Changed output name from "sm64.us.f3dex2e" to "sm64coopdx" (Agent X)</p>
-				<p>• Added 10 or more mods enabled warning (Agent X)</p>
-				<p>• Made FPS display borders not massive (Agent X)</p>
-				<p>• Translated "R Button - Options" (Agent X)</p>
-				<p>• Decreased PVP hitbox size and re-added angle checks making PVP significantly better (Agent X)</p>
-				<p>• Removed buggy singleplayer pause (Agent X)</p>
-				<p>• Overhauled palette presets (Agent X)</p>
-				<p>• Added "Open User Folder" (AppData on Windows) (Agent X)</p>
-				<p>• Made Castle Grounds and Castle Courtyard hills recolorable (Agent X)</p>
-				<p>• Added missing lines to language files (Agent X)</p>
-				<p>• Updated default config values (Agent X)</p>
-				<p>• Restored old Yoshi behavior (Agent X)</p>
-				<p>• Made Ice Luigi palette name change to something else on April 1st (Agent X)</p>
-				<h4>Bug Fixes:</h4>
-				<p>• Fixed gServerSettings.enablePlayersInLevelDisplay and gServerSettings.enablePlayerList not resetting on disconnect (Agent X)</p>
-				<p>• Fixed the colon in chat messages being colored by a colored name (Agent X)</p>
-				<p>• Fixed the "@ entered this level" notification not showing (Agent X)</p>
-				<p>• Fixed Profilers not using the full alphabet (Agent X)</p>
-				<p>• Fixed new letters not being editable from DynOS Packs (Agent X)</p>
-				<p>• Fixed the right edge of the screen not being shaded when paused on certain resolutions (Agent X)</p>
-				<p>• Fixed buggy Goddard backdrop (Agent X)</p>
-				<p>• Fixed object in view check not using override FOV if set (Agent X)</p>
-				<p>• Fixed buggy intro cutscene pipe (Agent X)</p>
-				<p>• Fixed legacy External Data and DynOS conflicts by removing External Data (Agent X)</p>
-				<p>• Fixed and vastly improved console printing (Agent X)</p>
-				<p>• Fixed some inconsistent word casing in the English lang (Agent X)</p>
-				<p>• Fixed strange camera offset when going through instant warps with Free Camera (Agent X)</p>
-				<p>• Fixed crashes when running certain functions on mod init with the --server param (Agent X)</p>
-				<p>• Fixed one of Luigi's voice samples cutting off early (Agent X, eros71)</p>
-				<p>• Fixed DynOS crashes that weren't triggered before due to broken console logging (Agent X)</p>
-				<p>• Fixed console color code bleeding (Agent X)</p>
-				<p>• Fixed console key not saving (Agent X)</p>
-				<p>• Fixed failed to load lang folder panel (Agent X)</p>
-				<p>• Disabled buggy DynOS compression (Agent X)</p>
-				<p>• Fixed chat and console still allowing mouse look (Agent X)</p>
-				<p>• Fixed being set to idle in dialogs (Agent X)</p>
-				<p>• Fixed Mario shadow settings not resetting on main menu (Agent X)</p>
-				<h4>Lua API Changes:</h4>
-				<p>• Fixed floats not registering as constants (Agent X)</p>
-				<p>• Added SM64COOPDX_VERSION constant for checking whether or not the game is DX (Agent X)</p>
-				<p>• Made FONT_TINY and FONT_NORMAL the same (Agent X)</p>
-				<p>• Added the ability to get and set the vertex color (Agent X)</p>
-				<p>• Added the ability to get and set the fog color and intensity (Agent X)</p>
-				<p>• Improved the HUD alphabet characters by swapping in the original sprites for them and improved the X and period (Agent X)</p>
-				<p>• Added HOOK_ON_EXIT (Agent X)</p>
-				<p>• Added djui_hud_get* functions (Agent X)</p>
-				<p>• Added the ability to get the date and time (Agent X)</p>
-				<p>• Rewrote Mod Storage and added type-specific functions as well as removing keys (Agent X)</p>
-				<p>• Vastly improved manual.lua documentation (Agent X)</p>
-				<p>• Built First Person camera into the game and added gFirstPersonCamera and constants along with it (Agent X)</p>
-				<p>• Added gNametagsSettings (Agent X)</p>
-				<p>• Added "-- deluxe:" field for mods (Agent X)</p>
-				<p>• Changed up extended soundbank a little bit (eros71)</p>
-				<p>• Added m.marioBodyState.allowPartRotation (Sharen)</p>
-				<p>• Added m.marioBodyState.lightingDirX/Y/Z (Agent X)</p>
-				<p>• Added gGlobalSoundSource (Agent X)</p>
-				<p>• Added the ability to override vanilla level textures (Agent X)</p>
-				<p>• Fixed DynOS warp to Castle Grounds making you face the wrong way (Agent X)</p>
-				<p>• Untied radars and timers from HUD_DISPLAY_FLAG_LIVES (Agent X)</p>
-				<p>• Added HOOK_ON_COLLIDE_LEVEL_BOUNDS (eros71)</p>
-				<p>• Added HOOK_OVERRIDE_PHYS_STEP_DEFACTO_SPEED (Agent X, 0x2480)</p>
-				<p>• Added HOOK_ON_OBJECT_LOAD (Agent X)</p>
-				<p>• Added Lua Profiler to standard build (Agent X)</p>
-				<p>• Added palette constants (Agent X)</p>
-				<p>• Added mario_is_crouching (Agent X)</p>
-				<p>• Renamed PlayerParts to PlayerPart (Agent X)</p>
-				<p>• Fixed and properly exposed gCharacters and fix typo (Agent X)</p>
-				<p>• Added different levels to console logging as the second parameter to log_to_console (Agent X)</p>
-				<p>• Added the ability to change the filter on DJUI HUD elements (Agent X)</p>
-				<p>• [Added 83 constants (total 3981)]</p>
-				<p>• [Added 18 functions (total 1563)]</p>
-				<p>• [Added 7 structs (total 84)]</p>
-				<p>• [Added 31 fields (total 2029)]</p>
-				<h4>Lua Mod Changes:</h4>
-				<p>• Improved PSC (Agent X)</p>
-				<p>• Removed Shell Rush (Agent X)</p>
-				<p>• Removed Character Movesets (Agent X)</p>
-				<p>• Removed Extended Moveset (Agent X)</p>
-				<p>• Removed Lakitu Cam (Agent X)</p>
-				<p>• Removed Hide & Seek (Agent X)</p>
-				<p>• Added Flood (Agent X)</p>
-				<p>• Added Sex in Minecraft (Joel pls play DX) (eros71)</p>
-				<p>• Updated Arena to improve commands, add a significantly improved Rainbow Road, add teching and add jump leniency (AngelicMiracles, Agent X)</p>
-				<p>• Added Character Select (Squishy)</p>
-				<p>• Added mQuake (0x2480)</p>
-				<p>• Added Day Night Cycle DX (Agent X)</p>
-				<p>• Added Gun Mod DX (Agent X)</p>
-			</div>
-		</main>
-		<footer class="text-center p-2">
-			<p>&copy; Coop <span class="dx">Deluxe</span>2024</p>
-		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-		<script src="index.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Team</title>
+    <meta property="og:image" content="logo.png"/>
+    <meta property="og:image:alt" content="PlaceholderProject Logo"/>
+    <meta property="og:image:width" content="1024"/>
+    <meta property="og:image:height" content="512"/>
+    <meta property="og:site_name" content="Placeholder Team"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Placeholder Team"/>
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:description" content="Lorem ipsum dolor sit amet."/>
+    <meta name="twitter:image:src" content="logo.png"/>
+    <meta name="twitter:site" content="index.html"/>
+    <meta name="twitter:title" content="Placeholder Team"/>
+    <meta name="twitter:description" content="Lorem ipsum dolor sit amet."/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Geologica.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul id="idsvglist" class="svgwrapper"></ul>
+      </div>
+    </div>
+
+    <div class="contentdiv">
+      <header class="sticky-top text-center container p-2">
+        <button type="button" onclick="location.href='https://izemod.de/trailer'">Trailer</button>
+        <button type="button" onclick="location.href='https://izemod.de/discord'">Discord</button>
+        <button type="button" onclick="location.href='https://izemod.de/github'">GitHub</button>
+        <button type="button" onclick="location.href='https://izemod.de/donate'">Donate</button>
+      </header>
+
+      <main class="container p-md-4">
+
+        <div class="container text-center py-4 glowing-image">
+          <div id="starshine">
+            <img id="shineimg" src="logo.png" class="w-80 zoom-animation" alt="PlaceholderProject Logo"/>
+            <div class="template shine"></div>
+          </div>
+        </div>
+
+        <div id="placeholder-main-page" class="placeholder-page">
+          <h3>What is PlaceholderProject?</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+            lorem in volutpat blandit, urna nulla vehicula ex, id fermentum justo
+            diam in nunc.
+          </p>
+          <p>
+            Nulla facilisi. Fusce tellus elit, tempus vel bibendum eget, viverra
+            sit amet urna. Curabitur euismod libero eros, eu fringilla nisi
+            viverra et.
+          </p>
+          <br><br>
+
+          <h3>MERGER!</h3>
+          <h4>Placeholder Merged Project</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis
+            luctus sapien, in hendrerit augue faucibus eget.
+          </p>
+          <br><br>
+          <h4>Another Placeholder</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras egestas
+            iaculis lorem sit amet posuere.
+          </p>
+          <br><br><br>
+
+          <h3>DOWNLOAD!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Suspendisse consequat euismod posuere.
+          </p>
+          <br>
+
+          <h3>SOURCE CODE!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed tristique nisl hendrerit, porta tellus quis, porta augue.
+          </p>
+          <br><br>
+
+          <h3>PlaceholderProject has shiny new built-in features!</h3>
+          <div class="container text-center">
+            <div class="row g-4">
+              <h4>Placeholder Feature One</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                tortor risus, elementum nec odio ac, pulvinar porta tellus.
+              </p>
+              <br>
+
+              <h4>Placeholder Feature Two</h4>
+              <p>
+                Duis nec turpis vel lorem aliquet tincidunt id non sem. Proin
+                tincidunt, mauris nec bibendum pulvinar, orci neque vestibulum
+                arcu, consequat bibendum sem lorem vitae mi.
+              </p>
+            </div>
+          </div>
+          <br><br>
+
+          <h3>Placeholder Team:</h3>
+          <h4>Developers:</h4>
+          <ul class="list-unstyled">
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+          </ul>
+          <h4>Contributors:</h4>
+          <ul class="list-unstyled">
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+            <li>Lorem ipsum: Lorem ipsum</li>
+          </ul>
+          <br><br>
+
+          <h3>FAQs with <span>iZePlayz</span></h3>
+          <dl>
+            <dt class="fqa-question">Q: Lorem ipsum dolor sit amet?</dt>
+            <dd class="fqa-answer">
+              A: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed congue viverra augue, ultricies dignissim sapien tincidunt at.
+            </dd>
+            <dt class="fqa-question">Q: Lorem ipsum dolor sit amet?</dt>
+            <dd class="fqa-answer">
+              A: Proin sagittis, nisi at sagittis consequat, tortor leo tempor
+              urna, at facilisis metus nisi vel massa.
+            </dd>
+            <dt class="fqa-question">Q: Lorem ipsum dolor sit amet?</dt>
+            <dd class="fqa-answer">
+              A: Sed ut velit porttitor, consectetur sem nec, commodo turpis.
+              Aenean volutpat ex a felis tempus rutrum.
+            </dd>
+          </dl>
+          <br>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit
+            amet dapibus erat. Aliquam condimentum blandit nulla sit amet interdum.
+          </p>
+        </div>
+      </main>
+
+      <footer class="text-center p-2">
+        <p>&copy; Placeholder Team 2024 - Lorem ipsum</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script>
+  </body>
 </html>
